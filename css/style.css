@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    margin: 0;
+}
+
+.figure {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/imagem-de-fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.figure > .header-figure{
+    width: 30%;
+}
+
+.figure > .header-figure > hgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} .figure > .header-figure > hgroup > h1 , .figure > .header-figure > hgroup > h2{
+    font-size: xx-large;
+}
+    .figure h1, .figure h2 {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+
+.figure > .header-figure > nav > ul {
+    display:flex ;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.figure > .header-figure > nav > ul > li > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: x-large;
+    position: relative;
+    text-shadow: 1px 1px 1px black;
+}
+
+.figure > .header-figure > nav > ul > li > a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 249, 249);
+    left: 0;
+    transition: all .5s ease-in-out;
+    box-shadow: 1px 1px 1px black;
+}
+
+.figure > .header-figure > nav > ul > li > a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+    box-shadow: 1px 1px 1px black;
+}
+
+.figure > .header-figure > nav > ul > li > a:hover::after, .figure > .header-figure > nav > ul > li > a:hover::before{
+    width: 100%;
+}
+
+#introducao, #bons-habitos, #maus-habitos{
+    height: 50px;
+}
+
+
+.all {
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+}
+
+.all h1 , h2{
+    text-align: center;
+    font-size: xx-large;
+    position: relative;
+}
+
+.all h2 {
+    margin-left: 30px;
+}
+
+.conteudo-article {
+    background: #f8f9f31c;
+}
+
+.all  .introducao > .conteudo {
+    display: flex;
+}
+
+    .all .introducao > .conteudo > .left {
+        width: 30%;
+        display: flex;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+        .all .introducao > .conteudo > .left > .container {
+            width: 250px;
+            height: 250px;         
+            border-radius: 50% 50%;
+            overflow: hidden;
+            box-shadow: 0px 1px 0px rgb(126, 126, 126);
+        }
+
+            .all .introducao > .conteudo > .left >.container > .img {
+                width: 100%;
+                height: 100%;
+                background-image: url(/img/cereja.jpg);
+                background-position: center center;
+                background-size: cover;
+                transition: all .5s ease-in-out;
+            }
+
+    .all .introducao > .conteudo > .center {
+        width: 50%;
+        height: auto;
+    } 
+        .all .introducao > .conteudo > .center > p{
+            text-align: justify;
+        }
+
+    .all .introducao > .conteudo > .right{
+        width: 30%;
+        display: flex;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .all .introducao > .conteudo > .right > .container {
+            width: 250px;
+            height: 250px;         
+            border-radius: 50% 50%;
+            overflow: hidden;
+            box-shadow: 0px 1px 0px black;
+        }   
+
+            .all .introducao > .conteudo > .right > .container > .img {
+                width: 100%;
+                height: 100%;
+                background-image: url(/img/morango.jpg);
+                background-position: center left;
+                background-size: cover;
+                transition: all .5s ease-in-out;
+                
+            }
+
+    .all .introducao > .conteudo > .left > .container > .img:hover,
+    .all .introducao > .conteudo > .right > .container > .img:hover {
+        transform: scale(1.05);
+    }
+
+
+.all .bons-habitos > .conteudo,
+.all .maus-habitos > .conteudo {
+    display: flex;
+}
+
+    .all .bons-habitos > .conteudo > .left,
+    .all .bons-habitos > .conteudo > .right,
+    .all .maus-habitos > .conteudo > .left,
+    .all .maus-habitos > .conteudo > .right {
+        width: 30%;
+        display: flex;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .all .bons-habitos > .conteudo > .left,
+    .all .bons-habitos > .conteudo > .right,
+    .all .maus-habitos > .conteudo > .left,
+    .all .maus-habitos > .conteudo > .right {
+        justify-content: center;
+    }
+
+        .all .bons-habitos > .conteudo > .left > .container,
+        .all .bons-habitos > .conteudo > .right > .container ,
+        .all .maus-habitos > .conteudo > .left > .container,
+        .all .maus-habitos > .conteudo > .right > .container{
+            width: 350px;
+            height: 350px;         
+            overflow: hidden;
+            box-shadow: 0px 1px 0px rgb(126, 126, 126);
+        }
+
+        .all .bons-habitos > .conteudo > .left > .container,
+        .all .maus-habitos > .conteudo > .left > .container,
+        .all .bons-habitos > .conteudo > .right > .container,
+        .all .maus-habitos > .conteudo > .right > .container{
+            border-radius: 20%;
+        }
+
+            .all .bons-habitos > .conteudo > .left > .container > .img,
+            .all .bons-habitos > .conteudo > .right > .container > .img,
+            .all .maus-habitos > .conteudo > .left > .container > .img,
+            .all .maus-habitos > .conteudo > .right > .container > .img {
+                width: 100%;
+                height: 100%;
+                background-position: center center;
+                background-size: cover;
+                transition: all .5s ease-in-out;
+            }
+
+                .all .bons-habitos > .conteudo > .left > .container > .img {
+                    background-image: url(/img/alimentos-variados.jpg);
+                }
+
+                .all .bons-habitos > .conteudo > .right > .container > .img {
+                    background-image: url(/img/alimentos-variados-2.jpg);
+                }
+
+                .all .maus-habitos > .conteudo > .left > .container > .img {
+                    background-image: url(/img/alimentos-variados.jpg);
+                }
+
+                .all .maus-habitos > .conteudo > .right > .container > .img {
+                    background-image: url(/img/alimentos-variados-2.jpg);
+                }
+
+            .all .bons-habitos > .conteudo > .left > .container > .img:hover,
+            .all .bons-habitos > .conteudo > .right > .container > .img:hover,
+            .all .maus-habitos > .conteudo > .left > .container > .img:hover,
+            .all .maus-habitos > .conteudo > .right > .container > .img:hover {
+                transform: scale(1.05);
+            }
+
+    
+    .all .bons-habitos > .conteudo > .center,
+    .all .maus-habitos > .conteudo > .center {
+        width: 50%;
+        height: auto;
+    } 
+        .all .bons-habitos > .conteudo > .center > p,
+        .all .maus-habitos > .conteudo > .center > p{
+            text-align: justify;
+        }
+
+
+.all .bons-habitos > .lista > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .all .bons-habitos > .lista ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all .bons-habitos > .lista ul li h3 {
+        text-align: start;
+        width: 80%;
+        position: relative;
+    }
+
+    .all .bons-habitos > .lista ul li h3::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+    }
+
+        .all .bons-habitos > .lista ul li .conteudo-li {
+            display: flex;
+            width: 80%;
+        }
+
+        .all .bons-habitos > .lista ul li .conteudo-li .right {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .all .bons-habitos > .lista ul li .conteudo-li .texto {
+            width: 70%;
+        }
+
+            .all .bons-habitos > .lista ul li .conteudo-li .texto p{
+                text-align: justify;
+                padding: 0 10px;
+            }
+
+            .all .bons-habitos > .lista ul li .conteudo-li .container-li {
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 50%;
+                box-shadow: 0px 1px 0px rgb(126, 126, 126);
+
+            } 
+
+            .all .bons-habitos > .lista ul li .conteudo-li .quadrado{
+                border-radius: 10%;
+            }
+
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .img {
+                    width: 100%;
+                    height: 100%;
+                    background-position: center center;
+                    background-size: cover;
+                    transition: all .5s ease-in-out;
+                }
+
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .agua {background-image: url(/img/agua.jpg);}
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .organico {background-image: url(/img/organicos.jpg);}
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .coma {background-image: url(/img/coma.jpg); background-position: center bottom;}
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .sal {background-image: url(/img/sal.jpg);}
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .alcoon {background-image: url(/img/alcool.jpg); background-position: center top;}
+
+                .all .bons-habitos > .lista ul li .conteudo-li .container-li .img:hover{
+                    transform: scale(1.05)
+                }
+
