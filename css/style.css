@@ -244,7 +244,7 @@ body{
                 }
 
                 .all .maus-habitos > .conteudo > .right > .container > .img {
-                    background-image: url(/img/gula.jpg);
+                    background-image: url(/img/habitos-ruins.jpg);
                 }
 
             .all .bons-habitos > .conteudo > .left > .container > .img:hover,
@@ -281,7 +281,7 @@ body{
 .all .bons-habitos > .lista > ul,
 .all .maus-habitos > .lista > ul {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -291,6 +291,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .all .bons-habitos > .lista ul li h3,
@@ -417,3 +418,72 @@ body{
 .lista-evitar-maus-habitos h3{
     color: black;
 }
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+    .button > button {
+        background-color: rgb(95, 55, 1);
+        color: white;
+        box-shadow: 1px 0px 1px black;
+        border: none;
+        cursor: pointer;
+    }
+
+    .neg {
+        background-color: rgb(95, 55, 1);
+    }
+
+    .button > .inverso {
+        background-color: #ffffff;
+        color: rgb(95, 55, 1);
+        box-shadow: 1px 0 1px rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    
+    .pos {
+        margin-bottom: 20px;
+    }
+
+
+footer.footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(95, 55, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer.footer .corpo-footer {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .corpo-footer ul {
+            height: 80%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+
+            .corpo-footer ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+
+            .corpo-footer ul li a:hover{
+                text-decoration: underline;
+            }

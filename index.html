@@ -84,7 +84,8 @@
                         </div>
                     </div>
                     <div class="lista">
-                        <ul>
+                        <div class="button"><button id="btn-bons-habitos">Ler Mais</button></div>
+                        <ul id="lista-bons-habitos">
                             <li><h3>Beba Bastante Água</h3>
                                 <div class="conteudo-li">
                                     <div class="texto">
@@ -99,8 +100,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>                            
-                            <li><h3>Invista em alimentos orgânicos e integrais</h3>
+                            </li>                                                    
+                            <li class=""><h3>Invista em alimentos orgânicos e integrais</h3>
                                 <div class="conteudo-li">
                                     <div class="texto">
                                         <p>A lógica é simples: quanto mais natural for sua alimentação, melhor! Por isso, é interessante consumir alimentos orgânicos, sem aditivos químicos. Os integrais também são bem-vindos, uma vez que apresentam maior quantidade de fibras, aumentando a sensação de saciedade, colaborando para o controle do peso e regulando a taxa de glicose no sangue.</p>
@@ -113,7 +114,7 @@
                                         </div>
                                     </div>
                                 </div></li>
-                            <li><h3>Evite ficar muito tempo sem comer</h3>
+                            <li class=""><h3>Evite ficar muito tempo sem comer</h3>
                                 <div class="conteudo-li">
                                     <div class="texto">
                                         <p>Nem mesmo a rotina agitada e a agenda cheia devem ser motivos para você pular as refeições, combinado? Encontre tempo para se alimentar adequadamente no café da manhã, no almoço e no jantar. Entre as refeições principais, faça pequenos lanches, com frutas e snacks saudáveis, mantendo uma distância de 3 horas entre uma refeição e outra.
@@ -127,7 +128,7 @@
                                         </div>
                                     </div>
                                 </div></li>
-                            <li><h3>Diminua o consumo de sal</h3>
+                            <li class=""><h3>Diminua o consumo de sal</h3>
                                 <div class="conteudo-li">
                                     <div class="texto">
                                         <p>Considerando que o excesso de sal é extremamente prejudicial para a saúde, trate de evitar o consumo excessivo de alimentos muito salgados! Comer muito sal aumenta o risco de hipertensão arterial e de doenças cardiovasculares, além de provocar retenção de líquidos e inchaço corporal. É preciso moderar até mesmo no tempero da salada, viu?</p>
@@ -140,7 +141,7 @@
                                         </div>
                                     </div>
                                 </div></li>
-                            <li><h3>Fuja das bebidas alcoólicas</h3>
+                            <li class=""><h3>Fuja das bebidas alcoólicas</h3>
                                 <div class="conteudo-li">
                                     <div class="texto">
                                         <p>Se você pretende se alimentar melhor, a ingestão de álcool também deve ser evitada. Além de não fornecem nutrientes importantes para o organismo, as bebidas alcoólicas são muito calóricas, favorecendo assim o ganho de peso. Como se não bastasse, o álcool pode prejudicar o funcionamento do fígado, bem como desencadear a hipoglicemia se consumido em excesso.</p>
@@ -183,7 +184,8 @@
                         </div>
                     </div>
                     <div class="lista">
-                        <ul class="lista-maus-habitos">
+                        <div class="button neg"><button id="btn-maus-habitos" class="inverso">Ler Mais</button></div>
+                        <ul class="lista-maus-habitos" id="lista-maus-habitos">
                             <!--https://panelinhafit.com.br/blog/8-maus-habitos-alimentares-que-prejudicam-sua-saude-->
                             <li><h3>Não ter uma alimentação balançeada</h3>
                                 <div class="conteudo-li">
@@ -277,7 +279,8 @@
                         <div class="center"><h2>Como evitar os Maus Hábitos Alimentares?</h2>
                             <p>O tempo ocioso ou pouco até a falta de tempo devido aos desafios de trabalho, cuidados com a família, podem favorecer o consumo em excesso como recurso de distração ou o consumo rápido de refeições para dar conta das tarefas cotidianas. Isso é péssimo para o seu organismo e vai cobrar a fatura cedo ou tarde. O mau hábito alimentar é impulsionador de doenças crônicas como diabetes, doenças cardíacas, pulmonares e até cáries. Por causa disso vamos apresentar a seguir 4 passos para se livrar e evitar o mau hábito alimentar. Confira!</p>
                         </div>
-                        <ul class="lista-evitar-maus-habitos">
+                        <div class="button pos"><button id="btn-evitar-maus-habitos">Ler Mais</button></div>
+                        <ul class="lista-evitar-maus-habitos" id="lista-evitar-maus-habitos">
                             <!-- https://blog.ingredientesonline.com.br/como-evitar-o-mau-habito-alimentar/ -->
                             <li><h3>Aumente o consumo de fibras</h3>
                                 <div class="conteudo-li">
@@ -351,9 +354,15 @@
                 </section>
             </main>
         </article>
-        <footer class="final">
-
+        <footer class="footer">
+            <div class="corpo-footer">
+                <ul>
+                    <li>Feito Por: Desconhecido</li>
+                    <li><a href="">Calculadora de Calorias</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

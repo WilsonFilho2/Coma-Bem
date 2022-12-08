@@ -5,7 +5,7 @@ O que fazer depois?
 
 Para esta aba:
 
-Criar um botão de ler mais, pois tem bastante coisa -- Fazer em Casa Hoje
+    Responsividade
 
 O que falta:
 
