@@ -5,8 +5,7 @@ O que fazer depois?
 
 Para esta aba:
 
-Colocar as Imagens e os Textos --
-Criar um botão de ler mais, pois tem bastante coisa --
+Criar um botão de ler mais, pois tem bastante coisa -- Fazer em Casa Hoje
 
 O que falta:
 

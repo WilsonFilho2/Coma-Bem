@@ -317,6 +317,11 @@ body{
             width: 80%;
         }
 
+        .all .maus-habitos > .lista ul li .no-image{
+            width: 100%;
+            justify-content: center;
+        }
+
         .all .maus-habitos > .lista ul li .conteudo-li {
             flex-direction: row-reverse;
         }
@@ -374,8 +379,41 @@ body{
                 .all .bons-habitos > .lista ul li .conteudo-li .container-li .sal {background-image: url(/img/sal.jpg);}
                 .all .bons-habitos > .lista ul li .conteudo-li .container-li .alcoon {background-image: url(/img/alcool.jpg); background-position: center top;}
 
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .balanca {background-image: url(/img/balanca.jpg); background-position: center left;}
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .exagero {background-image: url(/img/exagero.jpg); background-position: center top;}
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .acucar {background-image: url(/img/acucar.jpg); background-position: center bottom;}
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .liquido {background-image: url(/img/liquido.jpg); background-position: center center;}
+                
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .fibras {background-image: url(/img/fibras.jpg); background-position: center center;}
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .carnes {background-image: url(/img/carnes.jpg); background-position: center center;}
+                .all .maus-habitos > .lista ul li .conteudo-li .container-li .chocolate {background-image: url(/img/chocolate.jpg); background-position: center center;}
+
                 .all .bons-habitos > .lista ul li .conteudo-li .container-li .img:hover,
                 .all .maus-habitos > .lista ul li .conteudo-li .container-li .img:hover{
                     transform: scale(1.05)
                 }
 
+
+
+.maus-habitos {
+    background-color: rgb(95, 55, 1);
+    padding-top: 10px;
+}
+
+.maus-habitos p, .maus-habitos h2, .maus-habitos h3, .maus-habitos h1{
+    color: white;
+}
+
+.maus-habitos .lista > .center, .lista-evitar-maus-habitos {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.maus-habitos .lista > .center p,
+.maus-habitos .lista > .center h2,
+.lista-evitar-maus-habitos p,
+.lista-evitar-maus-habitos h1,
+.lista-evitar-maus-habitos h2,
+.lista-evitar-maus-habitos h3{
+    color: black;
+}
