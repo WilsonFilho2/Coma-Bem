@@ -7,7 +7,7 @@
 
     header.header-mobile{
         display: flex;
-        width: 100%;
+        width: 100vw;
         justify-content: center;
         box-shadow: 1px 0px 1px black;
         position: fixed;
@@ -20,6 +20,15 @@
             width: 70%;
             justify-content: space-evenly;
         }
+
+            header.header-mobile > .conteudo .img{
+                background-image: url(../img/imagem-de-fundo.jpg);
+                width: 80px;
+                height: 80px;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 50%;
+            }
 
             header.header-mobile > .conteudo > nav {
                 width: 50%;
@@ -68,4 +77,151 @@
         height: 150px;
     }
 
+    .all .maus-habitos .conteudo .left .container,
+    .all .maus-habitos .conteudo .right .container,
+    .all .bons-habitos .conteudo .left .container,
+    .all .bons-habitos .conteudo .right .container {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+    }
+
+    button{
+        width: 15%;
+        height: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1244px) {
+    header.header-mobile > .conteudo > nav {
+        width: 70%;
+    }
+
+    footer.footer > .corpo-footer{
+        width: 60%;
+    }
+
+    footer.footer > .corpo-footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    footer.footer > .corpo-footer ul li {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .all .introducao .conteudo,
+    .all .bons-habitos .conteudo,
+    .all .maus-habitos .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all .introducao .conteudo .center,
+    .all .bons-habitos .conteudo .center,
+    .all .maus-habitos .conteudo .center,
+    .all .maus-habitos .lista .center p {
+        width: 80%;
+    }
+
+    .button {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    header.header-mobile > .conteudo .img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    header.header-mobile > .conteudo{
+        width: 100%;
+    }
+    .all .introducao .conteudo .left,
+    .all .introducao .conteudo .right,
+    .all .bons-habitos .conteudo .left,
+    .all .bons-habitos .conteudo .right,
+    .all .maus-habitos .conteudo .left,
+    .all .maus-habitos .conteudo .right {
+        width: 100%;
+    }
+
+    .all .bons-habitos > .lista ul li .conteudo-li,
+    .all .maus-habitos > .lista ul li .conteudo-li,
+    .all .maus-habitos > .lista ul.lista-evitar-maus-habitos li .conteudo-li {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .all .bons-habitos > .lista ul li .conteudo-li .right,
+    .all .bons-habitos > .lista ul li .conteudo-li .texto,
+    .all .maus-habitos > .lista ul li .conteudo-li .right,
+    .all .maus-habitos > .lista ul li .conteudo-li .texto{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    header.header-mobile{
+        position: relative;
+        height: 200px;
+    }
+
+        header.header-mobile > .conteudo {
+            flex-direction: column;
+        }
+
+            header.header-mobile > .conteudo h1 {
+                text-align: center;
+            }
+
+            header.header-mobile > .conteudo nav {
+                width: 100%;
+            }
+}
+
+@media screen and (max-width: 490px) {
+    header.header-mobile > .conteudo nav {
+        height: 50%;
+    }
+
+        header.header-mobile > .conteudo nav ul{
+            flex-direction: column;
+            height: 100%;
+        }
+
+            header.header-mobile > .conteudo nav ul li {
+                display: flex;
+                justify-content: center;
+            }
+
+                .header-mobile > .conteudo-li nav ul a{
+                    position: relative;
+                }
+
+                header.header-mobile > .conteudo nav ul li a::after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    background-color: black;
+                }
+
+                .header-mobile > .conteudo nav ul li a::before {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    background-color: black;
+                    left: 0;
+                }
 }
