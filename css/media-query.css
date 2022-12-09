@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media  screen and (max-width: 1608px) {
+    .figure {
+        display: none;
+    }
+
+    header.header-mobile{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        box-shadow: 1px 0px 1px black;
+        position: fixed;
+        background-color: white;
+        z-index: 10000;
+    }
+
+        header.header-mobile > .conteudo{
+            display: flex;
+            width: 70%;
+            justify-content: space-evenly;
+        }
+
+            header.header-mobile > .conteudo > nav {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .header-mobile > .conteudo > nav ul {
+                    width: 100%;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    margin: 0;
+                    justify-content: space-evenly;
+                }
+
+                    .header-mobile > .conteudo nav ul li a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: larger;
+                        position: relative;
+                    }
+
+                    .header-mobile > .conteudo nav ul li a::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        top: 0;
+                        right: 0;
+                        background-color: black;
+                    }
+
+                    .header-mobile > .conteudo nav ul li a::before {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        bottom: 0;
+                        right: 0;
+                        background-color: black;
+                    }
+
+    footer.footer {
+        height: 150px;
+    }
+
+}

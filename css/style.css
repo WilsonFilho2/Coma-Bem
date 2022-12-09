@@ -487,3 +487,7 @@ footer.footer{
             .corpo-footer ul li a:hover{
                 text-decoration: underline;
             }
+
+.header-mobile{
+    display: none;
+}
