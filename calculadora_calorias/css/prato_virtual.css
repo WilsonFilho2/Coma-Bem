@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes muda_cor {
+    to{
+        background-color: rgb(46, 24, 0);
+    }
+}
+
+.all {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    animation: muda_cor both 2.5s 1s;
+}
+
+header h1{
+    margin: 0;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(41, 16, 5);
+}
+
+    header {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+        header ul {
+            list-style: none;
+        }
+
+            header ul li a {
+                color: white;
+                text-decoration: none;
+                position: relative;              
+            }
+
+            header ul li a::before {
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                background-color: white;
+                top: 0;
+                right: 0;
+                transition: all 1s ease;
+            }
+
+            header ul li a::after{
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                background-color: white;
+                bottom: 0;
+                left: 0;
+                transition: all 1s ease;
+            }
+
+            header ul li a:hover::after,
+            header ul li a:hover::before{
+                width: 100%;
+            }
+
+@keyframes crescer_conteudo {
+    100%{
+        width: 70%;
+        border: 1px solid rgb(255, 255, 255);
+    }
+}
+
+.conteudo{
+    border: 1px solid rgb(255, 255, 255);
+    width: 00%;
+    height: 75%;
+    animation: crescer_conteudo both 1.5s;
+}
+
+.lista,
+.resultado{
+    display: flex;
+}

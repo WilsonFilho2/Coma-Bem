@@ -477,16 +477,20 @@ footer.footer{
             justify-content: space-evenly;
         }
 
-
-            .corpo-footer ul li a {
-                color: white;
-                text-decoration: none;
+            .corpo-footer ul li {
+                display: flex;
+                justify-content: center;
             }
 
+                .corpo-footer ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
 
-            .corpo-footer ul li a:hover{
-                text-decoration: underline;
-            }
+
+                .corpo-footer ul li a:hover{
+                    text-decoration: underline;
+                }
 
 .header-mobile{
     display: none;
